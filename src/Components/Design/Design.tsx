@@ -7,7 +7,7 @@ interface Design {
 }
 
 export const Design: React.FC<Design> = () => {
-    const [designElems, setDesignElems] = React.useState<DesignElemObj[]>([
+    const [designElems] = React.useState<DesignElemObj[]>([
         {
             id: 0,
             title: 'Melo',
