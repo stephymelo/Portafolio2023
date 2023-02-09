@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+button, p, input, li, h1, h2, h3, h4, span, a {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  color: #313235;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 35px;
+  color: #6A7175;
+}
+
+a {
+  font-size: 16px;
+  color: inherit;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+body {
+  background-color: #FFFAF7;
+}
+
+footer {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3em;
+}
+
+.home {
+  margin-left: 20em;
+  margin-top: 10em;
+  margin-right: 120px;
+}
+
+.home__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__article--subtitle {
+  margin-top: 2em;
+  padding-right: 2em;
+}
+
+.home .rectangle {
+  fill: #D8DAFF;
+}
+
+.elem {
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6em;
+}
+
+.elem__title {
+  margin-top: 1.2em;
+}
+
+.elem__description {
+  font-size: 14px;
+  width: 50%;
+  margin-top: 1.4em;
+}
+
+.elem__a {
+  -webkit-transition: 2s;
+  transition: 2s;
+  width: 200px;
+}
+
+.elem__a .image {
+  width: 60%;
+  height: 60%;
+  margin-top: 1em;
+  border-radius: 11px;
+}
+
+.elem__a :hover {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-filter: drop-shadow(0px 0px 5px #D8DAFF);
+          filter: drop-shadow(0px 0px 5px #D8DAFF);
+}
+
+.elem__a :hover:after {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+@media screen and (max-width: 700px) {
+  .designElem {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .designElem__list {
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    text-align: center;
+  }
+  .designElem__title {
+    margin-top: 1.2em;
+  }
+  .designElem__description {
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 1.4em;
+  }
+  .designElem__a {
+    width: 60%;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .designElem__a .image {
+    width: 100%;
+    height: 60%;
+    margin-top: 1em;
+    border-radius: 11px;
+  }
+  .designElem__a :hover {
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -webkit-filter: drop-shadow(0px 0px 5px #D8DAFF);
+            filter: drop-shadow(0px 0px 5px #D8DAFF);
+  }
+  .designElem__a :hover:after {
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+}
+
+.menu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  left: 120px;
+  top: 300px;
+}
+
+.contact {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list {
+  width: 100%;
+}
+
+.list .item {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list .item--1:hover .item--1--line {
+  display: block;
+  opacity: 1;
+}
+
+.list .item--1--line {
+  margin-left: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  transform-box: fill-box;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  display: block;
+  opacity: 0;
+}
+
+.list .item--2:hover .item--2--line {
+  display: block;
+  opacity: 1;
+}
+
+.list .item--2--line {
+  margin-left: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  transform-box: fill-box;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  display: block;
+  opacity: 0;
+}
+
+.list .item--3:hover .item--3--line {
+  display: block;
+  opacity: 1;
+}
+
+.list .item--3--line {
+  margin-left: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transform-box: fill-box;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  display: block;
+  opacity: 0;
+}
+
+.list .item--4:hover .item--4--line {
+  display: block;
+  opacity: 1;
+}
+
+.list .item--4--line {
+  margin-left: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  transform-box: fill-box;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  display: block;
+  opacity: 0;
+}
+
+@font-face {
+  font-family: SpaceGrotesk, sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+}
+
+#app {
+  font-family: SpaceGrotesk,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

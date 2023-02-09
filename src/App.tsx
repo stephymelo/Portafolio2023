@@ -1,24 +1,85 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Home } from './Components/Home/Home';
+import { Menu } from './Components/Menu/Menu';
+import {
+  BrowserRouter as Router,
+  Route,
+  HashRouter,
+  BrowserRouter,
+  Routes
+} from "react-router-dom";
+import { Artwork } from './Components/Artwork/Artwork';
+import { Design } from './Components/Design/Design';
+import { About } from './Components/About/About';
+import DesignDetails from './Components/DesignDetails/DesignDetails';
+import DesignElem from './Components/DesignElem/DesignElem';
+import {DesignDetailsObj} from './Types/DesignDetailsObj'
+
 
 function App() {
+  const [designDetailElems, setDesignDetailsElems] = React.useState<DesignDetailsObj[]>([
+    {
+      
+                id: 0,
+                role: 'jaja',
+                tasks: 'Designer',
+                subtitle1: 'Designer',
+                paragraph1: 'Designer',
+                image1: 'Designer',
+                subtitle2: 'Designer',
+                paragraph2: 'Designer',
+                image2: 'Designer',
+                subtitle3: 'Designer',
+                paragraph3: 'Designer',
+                image3: 'Designer',
+                subtitle4: 'Designer',
+                paragraph4: 'Designer',
+                image4: 'Designer',
+
+            },
+            {
+
+              id: 1,
+              role: 'agh',
+              tasks: 'Designer',
+              subtitle1: 'Designer',
+              paragraph1: 'Designer',
+              image1: 'Designer',
+              subtitle2: 'Designer',
+              paragraph2: 'Designer',
+              image2: 'Designer',
+              subtitle3: 'Designer',
+              paragraph3: 'Designer',
+              image3: 'Designer',
+              subtitle4: 'Designer',
+              paragraph4: 'Designer',
+              image4: 'Designer',
+
+          },
+            
+          ]);
+        
+
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+      <Menu/>
+      <BrowserRouter>
+        <Routes>
+          <Route  path={"/"} element={<Home/>}/> 
+          <Route  path={"/about"} element={<About/>}/> 
+          <Route  path={"/design"} element={<Design/>}/> 
+          <Route  path={"/artwork"} element={<Artwork/>}/> 
+          <Route path={"/design/:id"} element={<DesignDetails list={designDetailElems}/>}/>
+        </Routes>
+
+
+      </BrowserRouter>
+
+
+
     </div>
   );
 }
