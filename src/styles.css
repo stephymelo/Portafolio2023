@@ -92,6 +92,16 @@ footer {
   margin-bottom: 3em;
 }
 
+.about {
+  margin-left: 20em;
+  margin-top: 10em;
+  margin-right: 120px;
+}
+
+.about .rectangle {
+  fill: #D8DAFF;
+}
+
 .home {
   margin-left: 20em;
   margin-top: 10em;
@@ -111,6 +121,12 @@ footer {
 
 .home .rectangle {
   fill: #D8DAFF;
+}
+
+.design {
+  margin-left: 20em;
+  margin-top: 10em;
+  margin-right: 120px;
 }
 
 .elem {
@@ -213,6 +229,12 @@ footer {
     -webkit-transition: 2s;
     transition: 2s;
   }
+}
+
+.artwork {
+  margin-left: 20em;
+  margin-top: 10em;
+  margin-right: 120px;
 }
 
 .menu {

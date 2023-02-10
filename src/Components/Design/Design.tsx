@@ -14,7 +14,7 @@ export const Design: React.FC<Design> = () => {
             description: 'Director',
             image: 'https://www.indiewire.com/wp-content/uploads/2017/10/screen-shot-2017-10-10-at-6-57-53-pm.png',
             path: '/design/1',
-            
+
         },
         {
             id: 1,
@@ -22,16 +22,17 @@ export const Design: React.FC<Design> = () => {
             description: 'Director',
             image: 'https://www.indiewire.com/wp-content/uploads/2017/10/screen-shot-2017-10-10-at-6-57-53-pm.png',
             path: '/design/2',
-            
+
         }
 
     ]);
     return (
-<section className='Design'>
+        <section className='design'>
+            <h1>Design</h1>
 
-{designElems.map((elem) => {
-                    return <DesignElem key={elem.id} {...elem} />;
-                })}
-</section>
-);
+            {designElems.map((elem) => {
+                return <DesignElem key={elem.id} {...elem} />;
+            })}
+        </section>
+    );
 }

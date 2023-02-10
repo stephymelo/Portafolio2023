@@ -20,7 +20,7 @@ interface Artwork {
 
 export const Artwork: React.FC<Artwork> = () => {
     return (
-<section className='artwork-section'>
+<section className='artwork'>
     <h1 className='title'>Artwork</h1>
     <article>
     <img src={space}/>
