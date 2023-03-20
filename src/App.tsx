@@ -14,6 +14,7 @@ import { About } from './Components/About/About';
 import DesignDetails from './Components/DesignDetails/DesignDetails';
 import DesignElem from './Components/DesignElem/DesignElem';
 import { DesignDetailsObj } from './Types/DesignDetailsObj'
+import { Contact } from './Components/Contact/Contact';
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
         <Route path={"/artwork"} element={<Artwork />} />
         <Route path={"/design/:id"} element={<DesignDetails list={designDetailElems} />} />
       </Routes>
+      <Contact />
     </div>
   );
 }

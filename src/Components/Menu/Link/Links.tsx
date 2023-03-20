@@ -31,7 +31,6 @@ export const Links: React.FC<Link> = () => {
                 break;
             default:
                 break;
-
         }
 
     });
