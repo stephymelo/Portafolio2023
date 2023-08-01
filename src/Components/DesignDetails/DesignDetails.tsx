@@ -17,13 +17,14 @@ const DesignDetails: React.FC<DesignDetailsProps> = ({ list }) => {
     //Spread operator
 
     if (!elem) return null;
-    const { role, subtitle1, paragraph1 } = elem;
+    const { role, subtitle1, paragraph1, bannerImg } = elem;
 
 
 
 
     return (<div>
 
+        <img src={bannerImg}></img>
         <h2 className='elem__title'>{role}</h2>
         <p className='elem__description'>{subtitle1}</p>
 

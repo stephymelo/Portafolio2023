@@ -2,6 +2,7 @@ export type DesignDetailsObj = {
     id: number;
     role:string;
     tasks:string;
+    bannerImg:string;
     subtitle1:string;
     paragraph1:string;
     image1:string;

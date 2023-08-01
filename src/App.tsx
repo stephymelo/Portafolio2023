@@ -15,6 +15,7 @@ import DesignDetails from './Components/DesignDetails/DesignDetails';
 import DesignElem from './Components/DesignElem/DesignElem';
 import { DesignDetailsObj } from './Types/DesignDetailsObj'
 import { Contact } from './Components/Contact/Contact';
+import bannerClose from './Resources/Images/CloseProject/CloseBannerDesign.png';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       id: 0,
       role: 'jaja',
       tasks: 'Designer',
+      bannerImg:bannerClose,
       subtitle1: 'Designer',
       paragraph1: 'Designer',
       image1: 'Designer',
@@ -43,6 +45,7 @@ function App() {
       id: 1,
       role: 'agh',
       tasks: 'Designer',
+      bannerImg:bannerClose,
       subtitle1: 'Designer',
       paragraph1: 'Designer',
       image1: 'Designer',
